@@ -1,0 +1,23 @@
+<app-entete></app-entete>
+<main >
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 titrePage">
+      <span class="d-block d-lg-none">Liste des etudiants de {{classe?.code}}</span>
+      <span class="d-none d-lg-block">Liste des etudiants de {{classe?.nom}}</span>
+    </div>
+
+    <div class="col-12">
+      @if(etudiants.length==0){
+        <div class="text-danger">Liste des étudiants vide</div>
+      } @else {
+
+        @for(e of etudiants; track e.id; let numero=$index; let $isEven=$even; let isOdd=$odd; let isFirst=$first){
+          <etudiant-item [etudiant]="e" [showDetails]="false"  ></etudiant-item>
+        }
+      }
+
+    </div>
+  </div>
+  </div>
+</main>

@@ -1,0 +1,41 @@
+
+<app-entete></app-entete>
+
+<main class="border border-primary p-2 rounded">
+<div class="container-fluid">
+  <div class="row p-2">
+    <div class="col-12 titrePage">Details classe</div>
+    <div class="col-12 col-lg-6">
+      <span class="detailLabel">ID : </span>
+      <span class="detailValue">{{classe.id}}</span>
+    </div>
+
+    <div class="col-12  col-lg-6">
+      <span class="detailLabel">Code : </span>
+      <span class="detailValue">{{classe.code}}</span>
+    </div>
+
+    <div class="col-12  col-lg-6">
+      <span class="detailLabel">Nom : </span>
+      <span class="detailValue">{{classe.nom}}</span>
+    </div>
+
+    @if (classe.responsable){
+      <div class="col-12  col-lg-6">
+          <span class="detailLabel">Responsable : </span>
+          <span class="detailValue">{{classe.responsable.prenom}} {{classe.responsable.prenom}}</span>
+      </div>
+    }
+
+
+    <div class="col-12">
+      <span class="detailLabel">description : </span>
+      <span class="detailValue">{{classe.description}}</span>
+    </div>
+
+  </div>
+</div>
+  <div class="text-end">
+    <button class="btn btn-link" [routerLink]="['/etudiants']" >Voir liste des etudiants de la classe</button>
+  </div>
+</main>

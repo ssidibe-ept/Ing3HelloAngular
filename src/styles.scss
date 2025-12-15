@@ -3,3 +3,45 @@
 @import "ipsl_variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+footer{
+  @extend .fixed-bottom;
+  @extend .bg-dark;
+  @extend .text-center;
+  @extend .p-2;
+  @extend .small;
+  @extend .text-danger;
+}
+
+.titrePage{
+  //@extend .bg-primary;
+  @extend .h2;
+  @extend .text-primary;
+  @extend .border-bottom;
+  @extend .border-primary;
+  @extend .p-2;
+  @extend .rounded;
+}
+
+.abstractDetails{
+  font-size: 24px;
+}
+
+.detailLabel{
+  @extend .abstractDetails;
+  @extend .fw-bold;
+}
+
+.detailValue{
+  @extend .abstractDetails;
+}
+
+main{
+  @extend .mx-2;
+  margin-top: $headerHeight;
+
+
+}
+header{
+  height: $headerHeight;
+}

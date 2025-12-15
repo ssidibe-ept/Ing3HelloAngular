@@ -1,0 +1,38 @@
+<div class="border-bottom  rounded my-2 p-2 row">
+  <div class="col-12 col-lg-6">
+    <span class="detailLabel" [style]="labelStyle">Prenom</span>
+    <span class="detailValue" [style]="valueStyle"> : {{etudiant?.prenom}}</span>
+  </div>
+
+  @if(showDetails){
+    <div class="col-12  col-lg-6 border-start">
+      <span class="detailLabel">Adresse : </span>
+      <span class="detailValue">{{etudiant?.adresse}}</span>
+    </div>
+  }
+
+  <div  class="col-12 col-lg-6">
+    <span class="detailLabel" [class.text-danger]="estMineur()">Nom : </span>
+    <span class="detailValue">{{etudiant?.nom}}</span><br/>
+  </div>
+
+  @if(showDetails){
+    <div class="col-12 col-lg-6 border-start">
+      <span class="detailLabel">Age : </span>
+      <span class="detailValue">{{etudiant?.age}}</span><br/>
+    </div>
+  }
+
+
+  <div class="col-12 col-lg-6">
+    <span class="detailLabel">Tel : </span>
+    <span class="detailValue">{{etudiant?.tel}}</span><br/>
+  </div>
+
+  @if(showDetails){
+    <div class="col-12 col-lg-6 border-start">
+      <span class="detailLabel">Poids : </span>
+      <span class="detailValue">{{etudiant?.poids}}</span><br/>
+    </div>
+  }
+</div>
