@@ -16,5 +16,6 @@ export interface Etudiant{
   poids?:number;
   adresse?:string;
   tel:string;
+  inscrit?:boolean,
   classe:Classe
 }
