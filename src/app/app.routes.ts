@@ -6,6 +6,7 @@ import {Error404} from './pages/error404/error404';
 import {ClasseDetails} from './pages/classe-details/classe-details';
 import {EtudiantsClasse} from './pages/etudiants-classe/etudiants-classe';
 import {EtudiantAjout} from './pages/etudiant-ajout/etudiant-ajout';
+import {TestRxjs} from './pages/test-rxjs/test-rxjs';
 
 export const routes: Routes = [
   {path:'', component:ClasseDetails},
@@ -15,5 +16,6 @@ export const routes: Routes = [
   {path:'classes/:idClass/new-etudiant', component:ClasseAdd},
   {path:'new-etudiant', component:EtudiantAjout},
   {path:'accueil', component:Accueil},
+  {path:'rx-js', component:TestRxjs},
   {path:'**', component:Error404},
 ];

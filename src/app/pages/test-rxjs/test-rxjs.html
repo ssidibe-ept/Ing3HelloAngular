@@ -1,0 +1,40 @@
+<app-entete></app-entete>
+<main class="container-fluid">
+  <div class="row">
+    <form id="formulaire" [formGroup]="produitsForm" class="col m-2 border">
+      <div class="mb-3">
+        <span class="form-label">Nom:</span>
+        <input  formControlName="nom" type="text" class="form-control"/>
+      </div>
+      <div class="mb-3">
+        <span class="form-label">Description:</span>
+        <input  formControlName="desc" type="text" class="form-control"/>
+      </div>
+      <div class="mb-3">
+        <span class="form-label">Prix unitaire:</span>
+        <input  formControlName="prixU" type="text" class="form-control"/>
+      </div>
+      <div class="mb-3">
+        <span class="form-label">Qte stock:</span>
+        <input  formControlName="qte" type="text" class="form-control"/>
+      </div>
+      <div class="mb-3 text-end">
+        <button (click)="ajoutProduit()" [disabled]="produitsForm.invalid" class="btn btn-primary">Valider</button>
+      </div>
+    </form>
+
+    <div id="allProduits" class="col bg-secondary">
+      all<br>
+      {{produitsAll|json}}
+    </div>
+    <div id="non-inscrit" class="col bg-info">
+      -1000 <br>
+      {{produitsMoins1000|json}}
+    </div>
+    <div id="moins-22" class="col bg-warning">
+      +10000
+      {{produitsPlus10000|json}}
+    </div>
+  </div>
+
+</main>
