@@ -1,0 +1,14 @@
+<p>employe-list works!</p>
+
+@if(loading){
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  chargement employés ....
+}
+
+@for (employe of employes; track employe.id){
+  {{employe.nom}}<br>
+}
+
+<div>toto</div>

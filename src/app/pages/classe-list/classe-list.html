@@ -1,1 +1,15 @@
-<p>Liste classe to do...</p>
+<p>Liste classe to do</p>
+
+
+@for (cls of classes; track $index) {
+  <div>
+    <div>Classe {{cls.code}}</div>
+    <div>
+      CODE: {{cls.code}}<br>
+      NOM: {{cls.nom}}<br>
+      @if(cls.responsable){
+        RESPONSABLE: {{cls.responsable.prenom}} {{cls.responsable.nom}}<br>
+      }
+    </div>
+  </div>
+}

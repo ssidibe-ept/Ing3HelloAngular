@@ -19,3 +19,11 @@ export interface Etudiant{
   inscrit?:boolean,
   classe:Classe
 }
+
+
+export interface Employe{
+  id?: number,
+  nom: string,
+  prenom: string,
+  salary: number
+}

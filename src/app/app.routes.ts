@@ -7,9 +7,10 @@ import {ClasseDetails} from './pages/classe-details/classe-details';
 import {EtudiantsClasse} from './pages/etudiants-classe/etudiants-classe';
 import {EtudiantAjout} from './pages/etudiant-ajout/etudiant-ajout';
 import {TestRxjs} from './pages/test-rxjs/test-rxjs';
+import {EmployeList} from './pages/employe-list/employe-list';
 
 export const routes: Routes = [
-  {path:'', component:ClasseDetails},
+  {path:'', component:EmployeList},
   {path:'classes', component:ClasseList},
   {path:'classes/:idClass/etudiants', component:EtudiantsClasse},
   {path:'classes/ajout', component:ClasseAdd},

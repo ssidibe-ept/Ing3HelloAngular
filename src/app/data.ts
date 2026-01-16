@@ -1,4 +1,4 @@
-import {Classe, Etudiant} from './models';
+import {Classe, Employe, Etudiant} from './models';
 
 
 
@@ -34,4 +34,10 @@ export const ETUDIANTS:Etudiant[]=[
   {id:5, prenom:'Salimata', nom:'Ba', tel:'7X XXX XXX', age:18, classe:ing3Info},
   {id:6, prenom:'Mamadou', nom:'Ndiaye', tel:'7X XXX XXX', age:22, classe:ing3Info},
   {id:7, prenom:'Ousmane', nom:'Gaye', tel:'7X XXX XXX', age:18, classe:ing3Info}
+]
+
+export const EMPLOYES:Employe[]=[
+  {id:1, prenom:'Saliou', nom:'Fall', salary:2000000},
+  {id:2, prenom:'Fatou', nom:'Ndiaye', salary:2500000},
+  {id:3, prenom:'Abdoul', nom:'Ba', salary:1500000},
 ]
